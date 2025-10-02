@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multimodal Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image + Text Analyzer 🧠</h1>
+      <p>Upload an image and ask Gemini a question about it.</p>
+      <form id="analyzer-form">
+        <div class="form-group">
+          <label for="image-upload">Upload Image</label>
+          <input
+            type="file"
+            id="image-upload"
+            name="image"
+            accept="image/*"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="prompt-input">Ask a Question</label>
+          <input
+            type="text"
+            id="prompt-input"
+            name="prompt"
+            placeholder="e.g., Suggest a funny caption for this"
+            required
+          />
+        </div>
+        <button type="submit" id="analyze-btn">
+          <span class="btn-text">Analyze!</span>
+          <span class="spinner" style="display: none;"></span>
+        </button>
+      </form>
+      <div id="result-container">
+        <h2>Gemini's Answer:</h2>
+        <p id="result-text">Your answer will appear here...</p>
+      </div>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+/* Base Styles */
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #444;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="file"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #5c67f2;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a56e2;
+}
+
+button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Spinner Animation */
+.spinner {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 0.8s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Result Container */
+#result-container {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+#result-text {
+    line-height: 1.6;
+}
+
+/* Markdown Styling */
+#result-text h1,
+#result-text h2,
+#result-text h3 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+#result-text p {
+    margin-bottom: 1em;
+}
+
+#result-text ul,
+#result-text ol {
+    margin-left: 20px;
+    margin-bottom: 1em;
+}
+
+#result-text code {
+    background-color: #f4f4f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+#result-text pre {
+    background-color: #f4f4f9;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+#result-text blockquote {
+    border-left: 4px solid #5c67f2;
+    padding-left: 15px;
+    margin: 1em 0;
+    color: #666;
+}
